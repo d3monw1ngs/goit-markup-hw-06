@@ -99,11 +99,11 @@
                             </div>
                             <div class="form-checkbox">
                                 <label for="checkbox" class="form-label"></label>
-                                    <input class="checkbox" type="checkbox">
+                                    <input class="checkbox-input" type="checkbox">
                                     <p class="checkbox-text">I accept the terms and conditions of the 
                                         <span class="checkbox-policy">Privacy Policy</span></p>
                             </div>
-                            <button class="modal-button button">Send</button>      
+                            <button type="submit" class="modal-button button">Send</button>      
                     </div>
                 </div>
             </div>
@@ -371,8 +371,8 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer class="bg-dark footer">
-        <div class="footer-col-1 container">
+    <footer class="bg-dark footer container">
+        <div class="footer-col-1">
             <a class="footer-link link" href="./index.html">
                 <h4 class="footer-logo"><span class="logo">WEB</span>STUDIO</h4>
             </a>
@@ -381,10 +381,10 @@
                 marketing & growth solutions.
             </p>
         </div>
-        <div class="footer-col-2 container">
-            <div class="footer-socials container">
+        <div class="footer-col-2">
+            <div class="footer-socials">
                 <p class="footer-text-socials">Social media</p>
-                <div class="footer-list container">
+                <div class="footer-list">
                     <a class="footer-icon" href="#">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#instagram-2"></use>
@@ -408,12 +408,16 @@
                 </div>
             </div>
         </div>
-        <div class="footer-col-3 container">
-            <div class="footer-subscribe container">
-                <p class="footer-text">Subscribe</p>
-
-            </div>
-
+        <div class="footer-col-3">
+            <h3 class="footer-sub-title">Subscribe</h3>
+            <form>
+                <input class="sub-input" type="text" placeholder="E-mail">
+                <button class="footer-button" type="submit">Subscribe
+                    <svg class="sub-icon" width="24" height="24">
+                        <use href="./images/icons.svg#plane"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
